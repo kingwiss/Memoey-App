@@ -52,17 +52,19 @@
 .memory-item {
   background-color: var(--card-background);
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  border: 1.5px solid var(--card-border);
+  border: 2px solid var(--card-border);
   position: relative;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 @media (max-width: 768px) {
@@ -78,9 +80,13 @@
 }
 
 .memory-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-color: var(--settings-selected);
+}
+
+.memory-item:hover img {
+  transform: scale(1.05);
 }
 
 .memory-item img {
@@ -88,8 +94,9 @@
   height: 180px;
   width: auto;
   margin-bottom: 1rem;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+  transform-origin: center;
 }
 
 @media (max-width: 768px) {
@@ -224,11 +231,13 @@
 
 
 /* Playing card specific styles */
-.memory-item img[src*='cards/svg_playing_cards'] {
+.memory-item img[src*='cards/'] {
   max-height: 180px;
   width: auto;
   object-fit: contain;
-  /* Ensure red suits (hearts/diamonds) and black suits (clubs/spades) maintain proper coloring */
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Specific styling for the new SVG playing cards */

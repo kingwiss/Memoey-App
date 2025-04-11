@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/New-app/', // Base URL for GitHub Pages
+  base: '/memory-trainer-rebuild/', // Base URL for GitHub Pages
   server: {
     port: 5173,
     open: true // Automatically open browser on server start
@@ -13,7 +13,12 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   resolve: {
     alias: [
