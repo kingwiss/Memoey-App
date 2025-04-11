@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Card corners -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000">8</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#D40000">♦</text>
+  
+  <!-- Bottom right corner (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 145)">8</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 125)">♦</text>
+  
+  <!-- Diamond symbols (4 pairs) -->
+  <!-- First row -->
+  <path d="M30,35 L35,45 L30,55 L25,45 Z" fill="#D40000"/>
+  <path d="M70,35 L75,45 L70,55 L65,45 Z" fill="#D40000"/>
+  
+  <!-- Second row -->
+  <path d="M30,65 L35,75 L30,85 L25,75 Z" fill="#D40000"/>
+  <path d="M70,65 L75,75 L70,85 L65,75 Z" fill="#D40000"/>
+  
+  <!-- Third row -->
+  <path d="M30,95 L35,105 L30,115 L25,105 Z" fill="#D40000"/>
+  <path d="M70,95 L75,105 L70,115 L65,105 Z" fill="#D40000"/>
+  
+  <!-- Center diamonds -->
+  <path d="M50,50 L55,60 L50,70 L45,60 Z" fill="#D40000"/>
+</svg>

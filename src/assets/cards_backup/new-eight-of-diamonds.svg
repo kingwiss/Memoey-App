@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23">8</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#E31B23">♦</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 145)">8</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 125)">♦</text>
+  
+  <!-- Diamond symbols -->
+  <path d="M30,35 L38,40 L30,45 L22,40 Z" fill="#E31B23"/>
+  <path d="M70,35 L78,40 L70,45 L62,40 Z" fill="#E31B23"/>
+  <path d="M30,65 L38,70 L30,75 L22,70 Z" fill="#E31B23"/>
+  <path d="M70,65 L78,70 L70,75 L62,70 Z" fill="#E31B23"/>
+  <path d="M30,95 L38,100 L30,105 L22,100 Z" fill="#E31B23"/>
+  <path d="M70,95 L78,100 L70,105 L62,100 Z" fill="#E31B23"/>
+  <path d="M50,50 L58,55 L50,60 L42,55 Z" fill="#E31B23"/>
+  <path d="M50,80 L58,85 L50,90 L42,85 Z" fill="#E31B23"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Card corners -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000">J</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#D40000">♥</text>
+  
+  <!-- Bottom right corner (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 145)">J</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 125)">♥</text>
+  
+  <!-- Center heart symbol -->
+  <path d="M50,40 C45,30 35,30 35,40 C35,50 50,65 50,65 C50,65 65,50 65,40 C65,30 55,30 50,40" fill="#D40000"/>
+  
+  <!-- Jack symbol (simplified crown/hat) -->
+  <path d="M40,85 L60,85 L55,75 L45,75 Z" fill="#D40000"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">K</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#000000">♠</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="end" transform="rotate(180, 85, 145)">K</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#000000" text-anchor="end" transform="rotate(180, 85, 125)">♠</text>
+  
+  <!-- Center spade symbol -->
+  <path d="M50,40 C40,55 30,65 30,75 C30,80 35,85 40,85 C45,85 50,80 50,75 C50,80 55,85 60,85 C65,85 70,80 70,75 C70,65 60,55 50,40 M45,85 L55,85 L55,95 L45,95 Z" fill="#000000"/>
+</svg>

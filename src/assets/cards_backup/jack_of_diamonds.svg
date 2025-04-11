@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.0861mm" height="242.6597mm" viewBox="0 0 167.0861 242.6597">
+<title>Jack of Diamonds Playing Card</title>
+<defs>
+<pattern id="card-back" height="100%" width="100%" patternUnits="userSpaceOnUse">
+<image x="0" y="0" width="167.0861" height="242.6597" xlink:href="data:image/png;base64,"/>
+</pattern>
+</defs>
+<g>
+<rect x="1.4210855e-14" y="0" width="167.0861" height="242.6597" rx="12" ry="12" fill="white" stroke="black" stroke-width="0.5"/>
+<path d="M 83.543 60.6649 L 63.543 121.33 L 83.543 181.995 L 103.543 121.33 Z" fill="#ff0000"/>
+<path d="M 43.543 90.6649 L 33.543 121.33 L 43.543 151.995 L 53.543 121.33 Z" fill="#ff0000"/>
+<path d="M 123.543 90.6649 L 113.543 121.33 L 123.543 151.995 L 133.543 121.33 Z" fill="#ff0000"/>
+<text x="19.8425" y="40.4399" font-family="Arial" font-size="48" font-weight="bold" fill="#ff0000">J</text>
+<text x="127.244" y="222.22" font-family="Arial" font-size="48" font-weight="bold" fill="#ff0000" transform="rotate(180,127.244,222.22)">J</text>
+</g>
+</svg>

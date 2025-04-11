@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Memory-themed Brain Logo with neural connections and memory sections -->
+  
+  <!-- Gradient definitions with brighter colors -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B347FF" /> <!-- Brighter purple -->
+      <stop offset="100%" stop-color="#6A11CB" /> <!-- Brighter indigo -->
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#47B5FF" /> <!-- Brighter blue -->
+      <stop offset="100%" stop-color="#1E40FF" /> <!-- Brighter navy -->
+    </linearGradient>
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40E0D0" /> <!-- Brighter teal -->
+      <stop offset="100%" stop-color="#00B4B4" /> <!-- Brighter turquoise -->
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE45E" /> <!-- Brighter gold -->
+      <stop offset="100%" stop-color="#FFAA00" /> <!-- Brighter orange -->
+    </linearGradient>
+    <linearGradient id="roseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8DC7" /> <!-- Brighter pink -->
+      <stop offset="100%" stop-color="#FF1493" /> <!-- Brighter deep pink -->
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" /> <!-- Increased glow effect -->
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="200" fill="#111122" opacity="0.9" />
+  
+  <!-- Main brain outline -->
+  <path d="M256 100c-80 0-150 65-150 150 0 85 70 150 150 150s150-65 150-150c0-85-70-150-150-150z" 
+        fill="none" stroke="#8A7BFF" stroke-width="6" opacity="0.8" /> <!-- Brighter outline -->
+  
+  <!-- Brain sections -->
+  <!-- Frontal lobe (working memory) -->
+  <path d="M256 130c-40 0-75 20-95 50 0 0 -10 15 -15 40 -5 25 0 40 0 40" 
+        fill="url(#purpleGradient)" opacity="0.85" filter="url(#glow)">
+    <animate attributeName="opacity" dur="3s" values="0.8;1;0.8" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Temporal lobe (long-term memory) -->
+  <path d="M146 220c0 0 -5 30 5 60 10 30 30 50 50 60" 
+        fill="url(#blueGradient)" opacity="0.85" filter="url(#glow)">
+    <animate attributeName="opacity" dur="4s" values="0.8;1;0.8" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Parietal lobe (sensory memory) -->
+  <path d="M201 340c0 0 30 20 55 20 25 0 55 -20 55 -20" 
+        fill="url(#tealGradient)" opacity="0.85" filter="url(#glow)">
+    <animate attributeName="opacity" dur="5s" values="0.8;1;0.8" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Occipital lobe (visual memory) -->
+  <path d="M311 340c0 0 30 -10 50 -30 20 -20 25 -30 30 -60 5 -30 0 -60 0 -60" 
+        fill="url(#goldGradient)" opacity="0.85" filter="url(#glow)">
+    <animate attributeName="opacity" dur="6s" values="0.8;1;0.8" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Hippocampus (memory formation) -->
+  <ellipse cx="256" cy="240" rx="40" ry="25" 
+           fill="url(#roseGradient)" opacity="0.95" filter="url(#glow)">
+    <animate attributeName="opacity" dur="2s" values="0.9;1;0.9" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Neural connections (animated) -->
+  <g stroke="white" stroke-width="2" opacity="0.7"> <!-- Increased stroke width for visibility -->
+    <!-- Connection 1 -->
+    <path d="M200 180 Q 256 220 310 180" fill="none">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+               values="M200 180 Q 256 220 310 180; M200 190 Q 256 230 310 190; M200 180 Q 256 220 310 180" />
+    </path>
+    <!-- Connection 2 -->
+    <path d="M180 240 Q 256 260 330 240" fill="none">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+               values="M180 240 Q 256 260 330 240; M180 250 Q 256 270 330 250; M180 240 Q 256 260 330 240" />
+    </path>
+    <!-- Connection 3 -->
+    <path d="M200 300 Q 256 280 310 300" fill="none">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite"
+               values="M200 300 Q 256 280 310 300; M200 310 Q 256 290 310 310; M200 300 Q 256 280 310 300" />
+    </path>
+  </g>
+  
+  <!-- Memory pulses (animated dots) -->
+  <g fill="white">
+    <circle cx="0" cy="0" r="3.5" opacity="0.9"> <!-- Increased size and opacity -->
+      <animateMotion path="M200 180 Q 256 220 310 180" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="3.5" opacity="0.9"> <!-- Increased size and opacity -->
+      <animateMotion path="M180 240 Q 256 260 330 240" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="3.5" opacity="0.9"> <!-- Increased size and opacity -->
+      <animateMotion path="M200 300 Q 256 280 310 300" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Highlights/reflections -->
+  <g opacity="0.8"> <!-- Increased opacity -->
+    <ellipse cx="230" cy="200" rx="15" ry="10" fill="white" opacity="0.6" />
+    <ellipse cx="280" cy="200" rx="15" ry="10" fill="white" opacity="0.6" />
+    <ellipse cx="256" cy="260" rx="20" ry="12" fill="white" opacity="0.6" />
+  </g>
+</svg>

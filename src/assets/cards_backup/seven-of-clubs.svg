@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="20" y="10" width="60" height="80" rx="5" ry="5" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="30" y="35" font-family="Arial" font-size="20" fill="#000">7</text>
+  <path d="M50,60 C45,60 45,65 50,70 C55,65 55,60 50,60" fill="#000"/>
+  <path d="M50,60 L50,45 L45,50" fill="#000"/>
+  <text x="65" y="85" font-family="Arial" font-size="20" fill="#000">♣</text>
+</svg>

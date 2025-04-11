@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23">2</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#E31B23">♦</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 145)">2</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 125)">♦</text>
+  
+  <!-- Center diamond symbols -->
+  <path d="M35,45 L45,60 L35,75 L25,60 Z" fill="#E31B23"/>
+  <path d="M65,75 L75,90 L65,105 L55,90 Z" fill="#E31B23"/>
+</svg>

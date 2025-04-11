@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 250">
+  <!-- Card background -->
+  <rect x="5" y="5" width="170" height="240" rx="12" ry="12" fill="white" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="20" y="40" font-family="Arial" font-size="30" font-weight="bold" fill="#e60000">2</text>
+  <path d="M20 55 L30 45 L20 35 L10 45 Z" fill="#e60000"/>
+  
+  <!-- Bottom right value and suit -->
+  <text x="160" y="210" font-family="Arial" font-size="30" font-weight="bold" fill="#e60000" text-anchor="end">2</text>
+  <path d="M160 185 L170 175 L160 165 L150 175 Z" fill="#e60000"/>
+  
+  <!-- Center diamonds -->
+  <path d="M90 90 L120 125 L90 160 L60 125 Z" fill="#e60000"/>
+  <path d="M90 40 L110 60 L90 80 L70 60 Z" fill="#e60000"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Card corners -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="black">Q</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="black">♠</text>
+  
+  <!-- Bottom right corner (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="black" text-anchor="end" transform="rotate(180, 85, 145)">Q</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="black" text-anchor="end" transform="rotate(180, 85, 125)">♠</text>
+  
+  <!-- Center spade symbol -->
+  <path d="M50,40 C45,55 35,65 35,75 C35,82 40,85 45,85 C50,85 50,80 50,75 C50,80 50,85 55,85 C60,85 65,82 65,75 C65,65 55,55 50,40" fill="black"/>
+  <path d="M50,85 L45,100 L55,100 Z" fill="black"/>
+  
+  <!-- Queen crown symbol -->
+  <path d="M40,110 L60,110 C55,105 55,100 50,100 C45,100 45,105 40,110 Z" fill="black"/>
+</svg>

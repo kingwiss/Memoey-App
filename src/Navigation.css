@@ -1,0 +1,56 @@
+/* Navigation Header Styles */
+.navigation-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .navigation-header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px; /* Controls the distance between buttons */
+}
+
+@media (max-width: 480px) {
+  .navigation-buttons {
+    max-width: 100%;
+  }
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--app-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .nav-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+  }
+}
+
+.nav-button:hover {
+  background-color: var(--card-hover);
+}

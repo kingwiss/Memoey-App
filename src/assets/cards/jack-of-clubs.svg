@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Card corners -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="black">J</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="black">♣</text>
+  
+  <!-- Bottom right corner (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="black" text-anchor="end" transform="rotate(180, 85, 145)">J</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="black" text-anchor="end" transform="rotate(180, 85, 125)">♣</text>
+  
+  <!-- Center club symbol -->
+  <path d="M50,50 C45,50 40,55 40,60 C40,65 45,70 50,70 C55,70 60,65 60,60 C60,55 55,50 50,50" fill="black"/>
+  <path d="M50,40 C45,40 40,45 40,50 C40,55 45,60 50,60 C55,60 60,55 60,50 C60,45 55,40 50,40" fill="black"/>
+  <path d="M50,60 C45,60 40,65 40,70 C40,75 45,80 50,80 C55,80 60,75 60,70 C60,65 55,60 50,60" fill="black"/>
+  <path d="M50,80 L45,95 L55,95 Z" fill="black"/>
+</svg>

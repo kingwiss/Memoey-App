@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Card corners -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000">9</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#D40000">♥</text>
+  
+  <!-- Bottom right corner (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 145)">9</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#D40000" text-anchor="end" transform="rotate(180, 85, 125)">♥</text>
+  
+  <!-- Heart symbols (4 pairs + center) -->
+  <!-- First row -->
+  <path d="M30,35 C27,30 22,30 22,35 C22,40 30,50 30,50 C30,50 38,40 38,35 C38,30 33,30 30,35" fill="#D40000"/>
+  <path d="M70,35 C67,30 62,30 62,35 C62,40 70,50 70,50 C70,50 78,40 78,35 C78,30 73,30 70,35" fill="#D40000"/>
+  
+  <!-- Second row -->
+  <path d="M30,65 C27,60 22,60 22,65 C22,70 30,80 30,80 C30,80 38,70 38,65 C38,60 33,60 30,65" fill="#D40000"/>
+  <path d="M70,65 C67,60 62,60 62,65 C62,70 70,80 70,80 C70,80 78,70 78,65 C78,60 73,60 70,65" fill="#D40000"/>
+  
+  <!-- Center heart -->
+  <path d="M50,50 C47,45 42,45 42,50 C42,55 50,65 50,65 C50,65 58,55 58,50 C58,45 53,45 50,50" fill="#D40000"/>
+</svg>

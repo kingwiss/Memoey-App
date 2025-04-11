@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <style>
+    .background { fill: #f5f5f5; }
+    .group { fill: #8b5cf6; stroke: #333; stroke-width: 1; opacity: 0.7; }
+    .item { fill: #6366f1; stroke: #333; stroke-width: 1; }
+    .text { font-family: Arial; font-size: 12px; fill: #333; }
+    .title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #333; }
+  </style>
+  
+  <!-- Background -->
+  <rect class="background" x="0" y="0" width="400" height="300" />
+  
+  <!-- Group 1 -->
+  <rect class="group" x="50" y="70" width="80" height="160" rx="5" ry="5" />
+  <circle class="item" cx="90" cy="100" r="10" />
+  <circle class="item" cx="90" cy="130" r="10" />
+  <circle class="item" cx="90" cy="160" r="10" />
+  <circle class="item" cx="90" cy="190" r="10" />
+  <text class="text" x="90" y="220" text-anchor="middle">Group 1</text>
+  
+  <!-- Group 2 -->
+  <rect class="group" x="160" y="70" width="80" height="160" rx="5" ry="5" />
+  <circle class="item" cx="200" cy="100" r="10" />
+  <circle class="item" cx="200" cy="130" r="10" />
+  <circle class="item" cx="200" cy="160" r="10" />
+  <circle class="item" cx="200" cy="190" r="10" />
+  <text class="text" x="200" y="220" text-anchor="middle">Group 2</text>
+  
+  <!-- Group 3 -->
+  <rect class="group" x="270" y="70" width="80" height="160" rx="5" ry="5" />
+  <circle class="item" cx="310" cy="100" r="10" />
+  <circle class="item" cx="310" cy="130" r="10" />
+  <circle class="item" cx="310" cy="160" r="10" />
+  <circle class="item" cx="310" cy="190" r="10" />
+  <text class="text" x="310" y="220" text-anchor="middle">Group 3</text>
+  
+  <!-- Numbers -->
+  <text class="text" x="90" y="104" text-anchor="middle" fill="white">4</text>
+  <text class="text" x="90" y="134" text-anchor="middle" fill="white">7</text>
+  <text class="text" x="90" y="164" text-anchor="middle" fill="white">1</text>
+  <text class="text" x="90" y="194" text-anchor="middle" fill="white">3</text>
+  
+  <text class="text" x="200" y="104" text-anchor="middle" fill="white">8</text>
+  <text class="text" x="200" y="134" text-anchor="middle" fill="white">6</text>
+  <text class="text" x="200" y="164" text-anchor="middle" fill="white">2</text>
+  <text class="text" x="200" y="194" text-anchor="middle" fill="white">9</text>
+  
+  <text class="text" x="310" y="104" text-anchor="middle" fill="white">5</text>
+  <text class="text" x="310" y="134" text-anchor="middle" fill="white">0</text>
+  <text class="text" x="310" y="164" text-anchor="middle" fill="white">2</text>
+  <text class="text" x="310" y="194" text-anchor="middle" fill="white">7</text>
+  
+  <!-- Title -->
+  <text class="title" x="200" y="30" text-anchor="middle">Chunking Technique</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">10</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#000000">♠</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="end" transform="rotate(180, 85, 145)">10</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#000000" text-anchor="end" transform="rotate(180, 85, 125)">♠</text>
+  
+  <!-- Center spade symbols -->
+  <path d="M25,25 C25,35 15,40 15,30 C15,20 25,15 25,25 M25,25 L25,35 M25,25 C25,35 35,40 35,30 C35,20 25,15 25,25" fill="#000000"/>
+  <path d="M75,25 C75,35 65,40 65,30 C65,20 75,15 75,25 M75,25 L75,35 M75,25 C75,35 85,40 85,30 C85,20 75,15 75,25" fill="#000000"/>
+  <path d="M25,55 C25,65 15,70 15,60 C15,50 25,45 25,55 M25,55 L25,65 M25,55 C25,65 35,70 35,60 C35,50 25,45 25,55" fill="#000000"/>
+  <path d="M75,55 C75,65 65,70 65,60 C65,50 75,45 75,55 M75,55 L75,65 M75,55 C75,65 85,70 85,60 C85,50 75,45 75,55" fill="#000000"/>
+  <path d="M25,85 C25,95 15,100 15,90 C15,80 25,75 25,85 M25,85 L25,95 M25,85 C25,95 35,100 35,90 C35,80 25,75 25,85" fill="#000000"/>
+  <path d="M75,85 C75,95 65,100 65,90 C65,80 75,75 75,85 M75,85 L75,95 M75,85 C75,95 85,100 85,90 C85,80 75,75 75,85" fill="#000000"/>
+  <path d="M50,40 C50,50 40,55 40,45 C40,35 50,30 50,40 M50,40 L50,50 M50,40 C50,50 60,55 60,45 C60,35 50,30 50,40" fill="#000000"/>
+  <path d="M50,70 C50,80 40,85 40,75 C40,65 50,60 50,70 M50,70 L50,80 M50,70 C50,80 60,85 60,75 C60,65 50,60 50,70" fill="#000000"/>
+  <path d="M25,115 C25,125 15,130 15,120 C15,110 25,105 25,115 M25,115 L25,125 M25,115 C25,125 35,130 35,120 C35,110 25,105 25,115" fill="#000000"/>
+  <path d="M75,115 C75,125 65,130 65,120 C65,110 75,105 75,115 M75,115 L75,125 M75,115 C75,125 85,130 85,120 C85,110 75,105 75,115" fill="#000000"/>
+</svg>

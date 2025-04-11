@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.0861mm" height="242.6597mm" viewBox="0 0 167.0861 242.6597">
+<title>Ace of Spades Playing Card</title>
+<defs>
+<pattern id="card-back" height="100%" width="100%" patternUnits="userSpaceOnUse">
+<image x="0" y="0" width="167.0861" height="242.6597" xlink:href="data:image/png;base64,"/>
+</pattern>
+</defs>
+<g>
+<rect x="1.4210855e-14" y="0" width="167.0861" height="242.6597" rx="12" ry="12" fill="white" stroke="black" stroke-width="0.5"/>
+<path d="M 83.543 181.995 L 83.543 181.995 C 83.543 181.995 51.3071 151.995 51.3071 136.995 C 51.3071 126.995 59.543 116.995 83.543 116.995 C 107.543 116.995 115.779 126.995 115.779 136.995 C 115.779 151.995 83.543 181.995 83.543 181.995 Z M 83.543 116.995 L 83.543 60.6649" fill="none" stroke="black" stroke-width="3"/>
+<text x="19.8425" y="40.4399" font-family="Arial" font-size="48" font-weight="bold">A</text>
+<text x="127.244" y="222.22" font-family="Arial" font-size="48" font-weight="bold" transform="rotate(180,127.244,222.22)">A</text>
+</g>
+</svg>

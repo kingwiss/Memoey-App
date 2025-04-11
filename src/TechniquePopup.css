@@ -1,0 +1,167 @@
+/* Technique Popup Styles */
+.technique-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--popup-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.technique-popup {
+  background-color: var(--popup-background);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .technique-popup {
+    padding: 1.5rem;
+    width: 95%;
+  }
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--popup-text);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.popup-close-button:hover {
+  opacity: 1;
+}
+
+.popup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.popup-header h2 {
+  color: var(--popup-text);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup-content {
+  color: var(--popup-text);
+  line-height: 1.6;
+}
+
+.content-container {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.text-content {
+  flex: 3;
+}
+
+.image-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .text-content,
+  .image-container {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .image-container {
+    order: -1; /* Show image first on mobile */
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.popup-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.start-exercise-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--popup-accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.start-exercise-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Navigation controls */
+.navigation-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.nav-button {
+  background-color: var(--popup-accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-size: 0.9rem;
+  color: var(--popup-text);
+  opacity: 0.8;
+}

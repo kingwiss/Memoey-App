@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23">4</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#E31B23">♥</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 145)">4</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#E31B23" text-anchor="end" transform="rotate(180, 85, 125)">♥</text>
+  
+  <!-- Center heart symbols -->
+  <path d="M30,40 C25,35 15,35 15,45 C15,55 30,65 30,65 C30,65 45,55 45,45 C45,35 35,35 30,40" fill="#E31B23"/>
+  <path d="M70,40 C65,35 55,35 55,45 C55,55 70,65 70,65 C70,65 85,55 85,45 C85,35 75,35 70,40" fill="#E31B23"/>
+  <path d="M30,90 C25,85 15,85 15,95 C15,105 30,115 30,115 C30,115 45,105 45,95 C45,85 35,85 30,90" fill="#E31B23"/>
+  <path d="M70,90 C65,85 55,85 55,95 C55,105 70,115 70,115 C70,115 85,105 85,95 C85,85 75,85 70,90" fill="#E31B23"/>
+</svg>

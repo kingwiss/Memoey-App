@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">6</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#000000">♠</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="end" transform="rotate(180, 85, 145)">6</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#000000" text-anchor="end" transform="rotate(180, 85, 125)">♠</text>
+  
+  <!-- Spade symbols -->
+  <path d="M30,40 C30,40 20,50 20,55 C20,60 25,62 30,58 C35,62 40,60 40,55 C40,50 30,40 30,40" fill="#000000"/>
+  <path d="M70,40 C70,40 60,50 60,55 C60,60 65,62 70,58 C75,62 80,60 80,55 C80,50 70,40 70,40" fill="#000000"/>
+  <path d="M50,70 C50,70 40,80 40,85 C40,90 45,92 50,88 C55,92 60,90 60,85 C60,80 50,70 50,70" fill="#000000"/>
+  <path d="M30,100 C30,100 20,110 20,115 C20,120 25,122 30,118 C35,122 40,120 40,115 C40,110 30,100 30,100" fill="#000000"/>
+  <path d="M70,100 C70,100 60,110 60,115 C60,120 65,122 70,118 C75,122 80,120 80,115 C80,110 70,100 70,100" fill="#000000"/>
+  <path d="M50,40 C50,40 40,50 40,55 C40,60 45,62 50,58 C55,62 60,60 60,55 C60,50 50,40 50,40" fill="#000000"/>
+</svg>

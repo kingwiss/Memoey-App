@@ -1,0 +1,625 @@
+/* Using global CSS variables defined in index.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f8fafc;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 15px 10px;
+  }
+}
+
+.app-header {
+  position: relative;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.app-logo {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease;
+  margin-left: 0px;
+  margin-top: 96px;
+  position: relative;
+}
+
+.app-logo:hover {
+  transform: scale(1.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+header h1 {
+  color: var(--app-text);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+}
+
+header p {
+  color: var(--app-text);
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.settings-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.settings-button:hover {
+  background-color: var(--card-hover);
+}
+
+/* User Tile styling */
+.user-tile {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-hover);
+}
+
+.tile-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.tile-title {
+  color: var(--app-text);
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.tile-description {
+  color: var(--app-text);
+  opacity: 0.8;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* Categories styling */
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.8fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+/* Responsive adjustments for categories */
+@media (max-width: 1024px) {
+  .categories-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .category-card {
+    width: 100%;
+    height: auto;
+    padding: 1.25rem;
+  }
+
+  .category-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-shape {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .category-card {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+  }
+
+  .category-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .category-card p {
+    font-size: 0.85rem;
+  }
+}
+
+.category-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* 20% less wide */
+  height: 120%; /* 20% taller */
+  margin: 0 auto; /* Center the card */
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.category-card h3 {
+  color: var(--app-text);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.category-card p {
+  color: var(--app-text);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.category-icon {
+  background-color: #f0f9ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon-shape {
+  width: 40px;
+  height: 40px;
+  background-color: #818cf8;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  position: relative;
+  overflow: visible;
+}
+
+.icon-shape::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background-color: #a5b4fc;
+  clip-path: polygon(50% 15%, 85% 40%, 75% 85%, 25% 85%, 15% 40%);
+  z-index: 1;
+}
+
+.icon-shape::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background-color: #c7d2fe;
+  clip-path: polygon(50% 25%, 70% 40%, 65% 70%, 35% 70%, 30% 40%);
+  z-index: 2;
+}
+
+.icon-card {
+  width: 40px;
+  height: 50px;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-card::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: #e60000;
+  border-radius: 50%;
+  /* Heart shape */
+  clip-path: path('M6 2 C3 4, 0 6, 0 9 C0 12, 3 12, 6 9 C9 12, 12 12, 12 9 C12 6, 9 4, 6 2 Z');
+}
+
+.icon-card::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  /* Spade shape */
+  clip-path: path('M6 0 C3 3, 0 6, 0 9 C0 12, 3 13, 6 10 C9 13, 12 12, 12 9 C12 6, 9 3, 6 0 Z');
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #f0abfc;
+  background: radial-gradient(circle, #f0abfc 20%, transparent 20%, transparent 40%, #f0abfc 40%, #f0abfc 60%, transparent 60%, transparent 80%, #f0abfc 80%);
+}
+
+.icon-object {
+  width: 40px;
+  height: 40px;
+  background-color: #fbbf24;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-object::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  background-color: #fbbf24;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.icon-object::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 8px;
+  background-color: #b45309;
+  border-radius: 4px;
+  box-shadow: 0 -4px 0 #b45309, 0 4px 0 #b45309;
+}
+
+.icon-food {
+  width: 40px;
+  height: 40px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(135deg, #ef4444 60%, #fca5a5 100%);
+}
+
+.icon-food::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-15deg);
+  width: 8px;
+  height: 12px;
+  background-color: #15803d;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon-food::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: -5px 5px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Settings styling */
+.settings-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background-color: var(--card-background);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.settings-container h2 {
+  color: var(--app-text);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.settings-group {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.settings-group h3 {
+  color: var(--app-text);
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.settings-options {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.setting-button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--card-background);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  color: var(--app-text);
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.setting-button:hover {
+  background-color: var(--card-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.setting-button.selected {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(99, 102, 241, 0.3);
+}
+
+.start-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 3rem auto 0;
+  padding: 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(99, 102, 241, 0.25);
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(99, 102, 241, 0.3);
+  background-color: #5558ea;
+}
+
+/* Exercise placeholder styling */
+.exercise-placeholder {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.exercise-placeholder h2 {
+  color: var(--app-text);
+  margin-bottom: 1rem;
+}
+
+.exercise-placeholder p {
+  color: var(--app-text);
+  opacity: 0.8;
+}
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Techniques section styling */
+.techniques-section {
+  margin-top: 8rem; /* Increased from 6rem to create more space */
+  padding-top: 4rem; /* Increased from 3rem */
+  padding-bottom: 2rem; /* Added padding at bottom */
+  clear: both;
+  position: relative; /* Added to establish a new stacking context */
+  z-index: 1; /* Ensure proper stacking order */
+}
+
+.techniques-section header {
+  text-align: center;
+  margin-bottom: 3rem; /* Increased from 2rem */
+  padding: 1rem; /* Added padding around the header */
+  background-color: var(--app-background); /* Match background to ensure visibility */
+}
+
+.techniques-section h2 {
+  color: var(--app-text);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.techniques-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.8fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Responsive adjustments for techniques grid */
+@media (max-width: 1024px) {
+  .techniques-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .techniques-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .technique-card {
+    width: 90%;
+    padding: 1.25rem;
+  }
+  
+  .technique-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .technique-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .techniques-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .technique-card {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .technique-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .technique-card p {
+    font-size: 0.85rem;
+  }
+}
+
+.technique-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* 20% less wide */
+  height: 120%; /* 20% taller */
+  margin: 0 auto; /* Center the card */
+}
+
+.technique-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.technique-icon {
+  background-color: #f0f9ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.technique-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.technique-card h3 {
+  color: var(--app-text);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.technique-card p {
+  color: var(--app-text);
+  opacity: 0.8;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .techniques-grid {
+    gap: 1rem;
+  }
+  
+  .technique-card {
+    margin: 0 1rem;
+  }
+}

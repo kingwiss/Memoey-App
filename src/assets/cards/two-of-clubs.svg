@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 250">
+  <!-- Card background -->
+  <rect x="5" y="5" width="170" height="240" rx="12" ry="12" fill="white" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="20" y="40" font-family="Arial" font-size="30" font-weight="bold" fill="#000000">2</text>
+  <path d="M20 60 C15 60, 12 65, 15 70 C10 70, 7 75, 10 80 C15 85, 20 80, 20 75 C20 80, 25 85, 30 80 C33 75, 30 70, 25 70 C28 65, 25 60, 20 60 Z" fill="#000000"/>
+  
+  <!-- Bottom right value and suit -->
+  <text x="160" y="210" font-family="Arial" font-size="30" font-weight="bold" fill="#000000" text-anchor="end">2</text>
+  <path d="M160 190 C155 190, 152 195, 155 200 C150 200, 147 205, 150 210 C155 215, 160 210, 160 205 C160 210, 165 215, 170 210 C173 205, 170 200, 165 200 C168 195, 165 190, 160 190 Z" fill="#000000"/>
+  
+  <!-- Center clubs -->
+  <path d="M90 80 C80 80, 75 90, 80 100 C70 100, 65 110, 70 120 C80 130, 90 120, 90 110 C90 120, 100 130, 110 120 C115 110, 110 100, 100 100 C105 90, 100 80, 90 80 Z" fill="#000000"/>
+  <path d="M90 140 C80 140, 75 150, 80 160 C70 160, 65 170, 70 180 C80 190, 90 180, 90 170 C90 180, 100 190, 110 180 C115 170, 110 160, 100 160 C105 150, 100 140, 90 140 Z" fill="#000000"/>
+</svg>

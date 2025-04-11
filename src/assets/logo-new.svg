@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+  <!-- Memory-themed Brain Logo with neural connections and memory sections -->
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8A2BE2" />
+      <stop offset="100%" stop-color="#4B0082" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E90FF" />
+      <stop offset="100%" stop-color="#0000CD" />
+    </linearGradient>
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#20B2AA" />
+      <stop offset="100%" stop-color="#008080" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+    <linearGradient id="roseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF69B4" />
+      <stop offset="100%" stop-color="#C71585" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="200" fill="#111122" opacity="0.9" />
+  
+  <!-- Main brain outline -->
+  <path d="M256 100c-80 0-150 65-150 150 0 85 70 150 150 150s150-65 150-150c0-85-70-150-150-150z" 
+        fill="none" stroke="#6A5ACD" stroke-width="6" opacity="0.7" />
+  
+  <!-- Brain sections -->
+  <!-- Frontal lobe (working memory) -->
+  <path d="M256 130c-40 0-75 20-95 50 0 0 -10 15 -15 40 -5 25 0 40 0 40" 
+        fill="url(#purpleGradient)" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" dur="3s" values="0.7;0.9;0.7" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Temporal lobe (long-term memory) -->
+  <path d="M146 220c0 0 -5 30 5 60 10 30 30 50 50 60" 
+        fill="url(#blueGradient)" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" dur="4s" values="0.7;0.9;0.7" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Parietal lobe (sensory memory) -->
+  <path d="M201 340c0 0 30 20 55 20 25 0 55 -20 55 -20" 
+        fill="url(#tealGradient)" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" dur="5s" values="0.7;0.9;0.7" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Occipital lobe (visual memory) -->
+  <path d="M311 340c0 0 30 -10 50 -40 20 -30 15 -60 15 -60" 
+        fill="url(#goldGradient)" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" dur="3.5s" values="0.7;0.9;0.7" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Hippocampus (memory formation) -->
+  <ellipse cx="256" cy="256" rx="40" ry="30" 
+           fill="url(#roseGradient)" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="opacity" dur="2.5s" values="0.7;1;0.7" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Neural connections (memory pathways) -->
+  <g stroke="#FFFFFF" stroke-width="1.5" opacity="0.6">
+    <!-- Connection lines -->
+    <path d="M256 226c-20 -30 -40 -20 -60 0" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" values="0;8" dur="1s" repeatCount="indefinite" />
+    </path>
+    <path d="M256 226c20 -30 40 -20 60 0" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" values="0;8" dur="1.2s" repeatCount="indefinite" />
+    </path>
+    <path d="M256 286c-20 30 -40 20 -60 0" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" values="0;8" dur="0.9s" repeatCount="indefinite" />
+    </path>
+    <path d="M256 286c20 30 40 20 60 0" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" values="0;8" dur="1.1s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Memory nodes (synapses) -->
+  <g fill="#FFFFFF">
+    <circle cx="196" cy="226" r="3">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="316" cy="226" r="3">
+      <animate attributeName="r" values="2;4;2" dur="2.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="196" cy="286" r="3">
+      <animate attributeName="r" values="2;4;2" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="316" cy="286" r="3">
+      <animate attributeName="r" values="2;4;2" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

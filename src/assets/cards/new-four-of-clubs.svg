@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Card background with rounded corners -->
+  <rect x="5" y="5" width="90" height="140" rx="10" ry="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Top left value and suit -->
+  <text x="15" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="#000000">4</text>
+  <text x="15" y="50" font-family="Arial" font-size="24" fill="#000000">♣</text>
+  
+  <!-- Bottom right value and suit (inverted) -->
+  <text x="85" y="145" font-family="Arial" font-size="24" font-weight="bold" fill="#000000" text-anchor="end" transform="rotate(180, 85, 145)">4</text>
+  <text x="85" y="125" font-family="Arial" font-size="24" fill="#000000" text-anchor="end" transform="rotate(180, 85, 125)">♣</text>
+  
+  <!-- Center club symbols -->
+  <path d="M30,40 C25,40 20,45 22,50 C15,50 10,55 15,62 C20,69 27,65 30,58 C33,65 40,69 45,62 C50,55 45,50 38,50 C40,45 35,40 30,40" fill="#000000"/>
+  <path d="M70,40 C65,40 60,45 62,50 C55,50 50,55 55,62 C60,69 67,65 70,58 C73,65 80,69 85,62 C90,55 85,50 78,50 C80,45 75,40 70,40" fill="#000000"/>
+  <path d="M30,90 C25,90 20,95 22,100 C15,100 10,105 15,112 C20,119 27,115 30,108 C33,115 40,119 45,112 C50,105 45,100 38,100 C40,95 35,90 30,90" fill="#000000"/>
+  <path d="M70,90 C65,90 60,95 62,100 C55,100 50,105 55,112 C60,119 67,115 70,108 C73,115 80,119 85,112 C90,105 85,100 78,100 C80,95 75,90 70,90" fill="#000000"/>
+</svg>

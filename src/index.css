@@ -1,0 +1,70 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Global color variables */
+  --app-background: #f8fafc;
+  --app-text: #1e293b;
+  --card-background: #ffffff;
+  --card-border: #e2e8f0;
+  --card-hover: #f1f5f9;
+  --accent: #6366f1;
+  
+  /* Popup variables */
+  --popup-overlay: rgba(0, 0, 0, 0.5);
+  --popup-background: #ffffff;
+  --popup-text: #1e293b;
+  --popup-border: #e2e8f0;
+  --popup-accent: #6366f1;
+  --popup-button-hover: #f1f5f9;
+  
+  /* Settings variables */
+  --settings-background: #f8fafc;
+  --settings-text: #1e293b;
+  --settings-border: #e2e8f0;
+  --settings-hover: #f1f5f9;
+  --settings-selected: #6366f1;
+  --settings-selected-text: #ffffff;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--app-background);
+  color: var(--app-text);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--accent);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

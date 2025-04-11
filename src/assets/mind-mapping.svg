@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <style>
+    .background { fill: #f5f5f5; }
+    .node { fill: #8b5cf6; stroke: #333; stroke-width: 1; }
+    .central-node { fill: #6366f1; stroke: #333; stroke-width: 2; }
+    .connection { fill: none; stroke: #333; stroke-width: 1.5; }
+    .text { font-family: Arial; font-size: 10px; fill: #333; }
+    .central-text { font-family: Arial; font-size: 12px; font-weight: bold; fill: white; }
+    .title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #333; }
+  </style>
+  
+  <!-- Background -->
+  <rect class="background" x="0" y="0" width="400" height="300" />
+  
+  <!-- Central node -->
+  <circle class="central-node" cx="200" cy="150" r="40" />
+  <text class="central-text" x="200" y="155" text-anchor="middle">Main Topic</text>
+  
+  <!-- Connections and nodes -->
+  <!-- Branch 1 -->
+  <path class="connection" d="M230,125 C280,100 300,80 320,70" />
+  <circle class="node" cx="330" cy="70" r="25" />
+  <text class="text" x="330" y="74" text-anchor="middle">Subtopic 1</text>
+  
+  <!-- Branch 2 -->
+  <path class="connection" d="M235,160 C280,170 310,190 320,210" />
+  <circle class="node" cx="330" cy="220" r="25" />
+  <text class="text" x="330" y="224" text-anchor="middle">Subtopic 2</text>
+  
+  <!-- Branch 3 -->
+  <path class="connection" d="M170,180 C130,200 100,210 80,220" />
+  <circle class="node" cx="70" cy="230" r="25" />
+  <text class="text" x="70" y="234" text-anchor="middle">Subtopic 3</text>
+  
+  <!-- Branch 4 -->
+  <path class="connection" d="M170,120 C130,100 100,80 80,70" />
+  <circle class="node" cx="70" cy="70" r="25" />
+  <text class="text" x="70" y="74" text-anchor="middle">Subtopic 4</text>
+  
+  <!-- Sub-branches -->
+  <path class="connection" d="M350,80 C370,90 380,100 385,115" />
+  <circle class="node" cx="390" cy="125" r="15" />
+  <text class="text" x="390" y="129" text-anchor="middle" font-size="8">Detail</text>
+  
+  <path class="connection" d="M350,210 C370,200 380,190 385,175" />
+  <circle class="node" cx="390" cy="165" r="15" />
+  <text class="text" x="390" y="169" text-anchor="middle" font-size="8">Detail</text>
+  
+  <path class="connection" d="M50,70 C30,80 20,90 15,105" />
+  <circle class="node" cx="10" cy="115" r="15" />
+  <text class="text" x="10" y="119" text-anchor="middle" font-size="8">Detail</text>
+  
+  <path class="connection" d="M50,230 C30,220 20,210 15,195" />
+  <circle class="node" cx="10" cy="185" r="15" />
+  <text class="text" x="10" y="189" text-anchor="middle" font-size="8">Detail</text>
+  
+  <!-- Title -->
+  <text class="title" x="200" y="30" text-anchor="middle">Mind Mapping Technique</text>
+</svg>
