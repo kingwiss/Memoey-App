@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Colorful Brain Logo based on the provided image -->
+  <!-- Main brain sections with overlapping colors -->
+  <g transform="translate(50, 50) scale(0.8)">
+    <!-- Blue section (left) -->
+    <path d="M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30" fill="#4285F4" opacity="0.9">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30; M110 210c-30-35-35-85-15-125 20-40 65-55 95-35 0 0 15-35 45-35 30 0 35 25 35 25; M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30" />
+    </path>
+    
+    <!-- Teal/Green section (top left) -->
+    <path d="M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20" fill="#34A853" opacity="0.9">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20; M145 185c-20-25-25-65-10-95 15-30 50-45 75-30 0 0 10-25 35-25 25 0 25 15 25 15; M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20" />
+    </path>
+    
+    <!-- Yellow section (center) -->
+    <path d="M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15" fill="#FBBC05" opacity="0.9">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15; M175 155c-15-20-20-50-5-75 15-25 40-35 60-25 0 0 10-20 30-20 20 0 20 10 20 10; M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15" />
+    </path>
+    
+    <!-- Orange section (right) -->
+    <path d="M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10" fill="#FF9900" opacity="0.9">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10; M205 125c-10-15-15-40 0-60 15-20 35-30 50-20 0 0 10-15 25-15 15 0 15 5 15 5; M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10" />
+    </path>
+    
+    <!-- Red section (bottom right) -->
+    <path d="M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5" fill="#EA4335" opacity="0.9">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite" values="M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5; M235 95c-5-10-10-30 5-45 15-15 25-25 40-15 0 0 10-10 20-10 10 0 10 0 10 0; M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5" />
+    </path>
+  </g>
+  
+  <!-- Highlights/reflections -->
+  <g opacity="0.6">
+    <ellipse cx="150" cy="180" rx="15" ry="10" fill="white" opacity="0.5" />
+    <ellipse cx="200" cy="150" rx="15" ry="10" fill="white" opacity="0.5" />
+    <ellipse cx="250" cy="120" rx="15" ry="10" fill="white" opacity="0.5" />
+    <ellipse cx="300" cy="150" rx="15" ry="10" fill="white" opacity="0.5" />
+    <ellipse cx="350" cy="180" rx="15" ry="10" fill="white" opacity="0.5" />
+  </g>
+</svg>

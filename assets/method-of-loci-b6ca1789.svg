@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <style>
+    .room { fill: #f5f5f5; stroke: #333; stroke-width: 2; }
+    .furniture { fill: #8b5cf6; stroke: #333; stroke-width: 1; }
+    .item { fill: #6366f1; stroke: #333; stroke-width: 1; }
+    .arrow { fill: none; stroke: #333; stroke-width: 2; stroke-dasharray: 5,5; }
+    .text { font-family: Arial; font-size: 12px; fill: #333; }
+  </style>
+  
+  <!-- Room outline -->
+  <rect class="room" x="50" y="50" width="300" height="200" rx="5" ry="5" />
+  
+  <!-- Furniture items -->
+  <rect class="furniture" x="70" y="70" width="80" height="40" rx="2" ry="2" />
+  <rect class="furniture" x="250" y="70" width="80" height="40" rx="2" ry="2" />
+  <rect class="furniture" x="70" y="190" width="80" height="40" rx="2" ry="2" />
+  <rect class="furniture" x="250" y="190" width="80" height="40" rx="2" ry="2" />
+  <rect class="furniture" x="160" y="130" width="80" height="40" rx="2" ry="2" />
+  
+  <!-- Memory items -->
+  <circle class="item" cx="110" cy="90" r="10" />
+  <circle class="item" cx="290" cy="90" r="10" />
+  <circle class="item" cx="110" cy="210" r="10" />
+  <circle class="item" cx="290" cy="210" r="10" />
+  <circle class="item" cx="200" cy="150" r="10" />
+  
+  <!-- Path arrow -->
+  <path class="arrow" d="M110,90 L290,90 L290,210 L110,210 L110,90" />
+  
+  <!-- Labels -->
+  <text class="text" x="110" y="65">Item 1</text>
+  <text class="text" x="290" y="65">Item 2</text>
+  <text class="text" x="110" y="240">Item 4</text>
+  <text class="text" x="290" y="240">Item 3</text>
+  <text class="text" x="200" y="125">Item 5</text>
+  
+  <text class="text" x="150" y="30" font-size="16" font-weight="bold">Method of Loci</text>
+</svg>

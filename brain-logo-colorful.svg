@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Enhanced Colorful Brain Logo with vibrant colors and gradients -->
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" />
+      <stop offset="100%" stop-color="#0F9D58" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F9D58" />
+      <stop offset="100%" stop-color="#34A853" />
+    </linearGradient>
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBC05" />
+      <stop offset="100%" stop-color="#FF9900" />
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9900" />
+      <stop offset="100%" stop-color="#EA4335" />
+    </linearGradient>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA4335" />
+      <stop offset="100%" stop-color="#DB4437" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main brain sections with overlapping colors and gradients -->
+  <g transform="translate(50, 50) scale(0.8)">
+    <!-- Blue section (left) -->
+    <path d="M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30" fill="url(#blueGradient)" opacity="0.9">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30; M110 210c-30-35-35-85-15-125 20-40 65-55 95-35 0 0 15-35 45-35 30 0 35 25 35 25; M120 220c-33-40-40-90-20-130 20-40 60-50 90-30 0 0 10-30 40-30 30 0 40 30 40 30" />
+    </path>
+    
+    <!-- Green section (top left) -->
+    <path d="M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20" fill="url(#greenGradient)" opacity="0.9">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20; M145 185c-20-25-25-65-10-95 15-30 50-45 75-30 0 0 10-25 35-25 25 0 25 15 25 15; M150 190c-25-30-30-70-15-100 15-30 45-40 70-25 0 0 5-20 30-20 25 0 30 20 30 20" />
+    </path>
+    
+    <!-- Yellow section (center) -->
+    <path d="M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15" fill="url(#yellowGradient)" opacity="0.9">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15; M175 155c-15-20-20-50-5-75 15-25 40-35 60-25 0 0 10-20 30-20 20 0 20 10 20 10; M180 160c-20-25-25-55-10-80 15-25 35-30 55-20 0 0 5-15 25-15 20 0 25 15 25 15" />
+    </path>
+    
+    <!-- Orange section (right) -->
+    <path d="M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10" fill="url(#orangeGradient)" opacity="0.9">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10; M205 125c-10-15-15-40 0-60 15-20 35-30 50-20 0 0 10-15 25-15 15 0 15 5 15 5; M210 130c-15-20-20-45-5-65 15-20 30-25 45-15 0 0 5-10 20-10 15 0 20 10 20 10" />
+    </path>
+    
+    <!-- Red section (bottom right) -->
+    <path d="M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5" fill="url(#redGradient)" opacity="0.9">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite" values="M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5; M235 95c-5-10-10-30 5-45 15-15 25-25 40-15 0 0 10-10 20-10 10 0 10 0 10 0; M240 100c-10-15-15-35-5-50 10-15 20-20 35-10 0 0 5-5 15-5 10 0 15 5 15 5" />
+    </path>
+  </g>
+  
+  <!-- Additional colorful elements -->
+  <g opacity="0.7" filter="url(#glow)">
+    <!-- Neural connections -->
+    <path d="M150 200 L200 170 L250 150 L300 170 L350 200" stroke="#4285F4" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M150 200 L200 170 L250 150 L300 170 L350 200; M155 205 L205 175 L255 155 L305 175 L355 205; M150 200 L200 170 L250 150 L300 170 L350 200" />
+    </path>
+    <path d="M160 210 L210 180 L260 160 L310 180 L360 210" stroke="#34A853" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="M160 210 L210 180 L260 160 L310 180 L360 210; M165 215 L215 185 L265 165 L315 185 L365 215; M160 210 L210 180 L260 160 L310 180 L360 210" />
+    </path>
+    <path d="M170 220 L220 190 L270 170 L320 190 L370 220" stroke="#FBBC05" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M170 220 L220 190 L270 170 L320 190 L370 220; M175 225 L225 195 L275 175 L325 195 L375 225; M170 220 L220 190 L270 170 L320 190 L370 220" />
+    </path>
+    <path d="M180 230 L230 200 L280 180 L330 200 L380 230" stroke="#FF9900" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite" values="M180 230 L230 200 L280 180 L330 200 L380 230; M185 235 L235 205 L285 185 L335 205 L385 235; M180 230 L230 200 L280 180 L330 200 L380 230" />
+    </path>
+    <path d="M190 240 L240 210 L290 190 L340 210 L390 240" stroke="#EA4335" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M190 240 L240 210 L290 190 L340 210 L390 240; M195 245 L245 215 L295 195 L345 215 L395 245; M190 240 L240 210 L290 190 L340 210 L390 240" />
+    </path>
+  </g>
+  
+  <!-- Highlights/reflections with animation -->
+  <g opacity="0.8">
+    <ellipse cx="150" cy="180" rx="15" ry="10" fill="white" opacity="0.7">
+      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.7;0.3;0.7" />
+    </ellipse>
+    <ellipse cx="200" cy="150" rx="15" ry="10" fill="white" opacity="0.7">
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0.7;0.3;0.7" />
+    </ellipse>
+    <ellipse cx="250" cy="120" rx="15" ry="10" fill="white" opacity="0.7">
+      <animate attributeName="opacity" dur="5s" repeatCount="indefinite" values="0.7;0.3;0.7" />
+    </ellipse>
+    <ellipse cx="300" cy="150" rx="15" ry="10" fill="white" opacity="0.7">
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0.7;0.3;0.7" />
+    </ellipse>
+    <ellipse cx="350" cy="180" rx="15" ry="10" fill="white" opacity="0.7">
+      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.7;0.3;0.7" />
+    </ellipse>
+  </g>
+  
+  <!-- Pulsing neurons -->
+  <g>
+    <circle cx="175" cy="190" r="5" fill="#4285F4">
+      <animate attributeName="r" dur="2s" repeatCount="indefinite" values="5;7;5" />
+      <animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0.8;0.4;0.8" />
+    </circle>
+    <circle cx="225" cy="160" r="5" fill="#34A853">
+      <animate attributeName="r" dur="3s" repeatCount="indefinite" values="5;7;5" />
+      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.8;0.4;0.8" />
+    </circle>
+    <circle cx="275" cy="140" r="5" fill="#FBBC05">
+      <animate attributeName="r" dur="4s" repeatCount="indefinite" values="5;7;5" />
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0.8;0.4;0.8" />
+    </circle>
+    <circle cx="325" cy="160" r="5" fill="#FF9900">
+      <animate attributeName="r" dur="3s" repeatCount="indefinite" values="5;7;5" />
+      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.8;0.4;0.8" />
+    </circle>
+    <circle cx="375" cy="190" r="5" fill="#EA4335">
+      <animate attributeName="r" dur="2s" repeatCount="indefinite" values="5;7;5" />
+      <animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0.8;0.4;0.8" />
+    </circle>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M20,30 C20,30 30,10 50,20 C70,30 80,50 75,70 C70,90 50,80 40,70 C30,60 20,50 20,30 Z" fill="#fbbf24" stroke="#333" stroke-width="2"/>
+  <path d="M30,35 C30,35 40,25 50,30" fill="none" stroke="#333" stroke-width="1"/>
+  <path d="M35,45 C35,45 45,35 55,40" fill="none" stroke="#333" stroke-width="1"/>
+  <path d="M40,55 C40,55 50,45 60,50" fill="none" stroke="#333" stroke-width="1"/>
+</svg>
