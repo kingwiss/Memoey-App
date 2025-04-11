@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import './FloatingButtons.css';
 
-interface FloatingButtonsProps {
-  onNavigateToSubmissions?: () => void;
-}
+interface FloatingButtonsProps {}
 
-export const FloatingButtons: React.FC<FloatingButtonsProps> = ({ onNavigateToSubmissions }) => {
+export const FloatingButtons: React.FC<FloatingButtonsProps> = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isThankYouVisible, setIsThankYouVisible] = useState(false);
   const [formData, setFormData] = useState({

@@ -16,6 +16,33 @@ import chunkingIcon from './assets/chunking.svg';
 import activeRecallIcon from './assets/active-recall.svg';
 import mindMappingIcon from './assets/mind-mapping.svg';
 
+// Define memory techniques
+// Commented out for now as it's not being used yet
+/*
+const memoryTechniques = [
+  {
+    title: 'Method of Loci',
+    icon: methodOfLociIcon,
+    description: 'Associate items with specific locations in a familiar place.'
+  },
+  {
+    title: 'Chunking',
+    icon: chunkingIcon,
+    description: 'Group items into meaningful chunks for easier recall.'
+  },
+  {
+    title: 'Active Recall',
+    icon: activeRecallIcon,
+    description: 'Test yourself actively rather than passively reviewing.'
+  },
+  {
+    title: 'Mind Mapping',
+    icon: mindMappingIcon,
+    description: 'Create visual connections between items to remember.'
+  }
+];
+*/
+
 // Define interfaces
 interface Category {
   id: 'objects' | 'shapes' | 'foods' | 'cards';
