@@ -371,6 +371,48 @@ const Exercise: React.FC<ExerciseProps> = ({ category, settings, onExit }) => {
   
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
+    
+    // Enhanced auto-scroll functionality
+    const scrollThreshold = 100; // Distance from edges to trigger scroll
+    const scrollSpeed = 15; // Base scroll speed
+    const container = document.querySelector('.app-container');
+    if (!container) return;
+    
+    const containerRect = container.getBoundingClientRect();
+    const distanceFromTop = e.clientY - containerRect.top;
+    const distanceFromBottom = containerRect.bottom - e.clientY;
+    const distanceFromLeft = e.clientX - containerRect.left;
+    const distanceFromRight = containerRect.right - e.clientX;
+    
+    // Calculate scroll speeds based on distance from edges
+    const getScrollSpeed = (distance: number) => {
+      if (distance >= scrollThreshold) return 0;
+      // Exponential scroll speed based on proximity to edge
+      return scrollSpeed * (1 - distance / scrollThreshold);
+    };
+    
+    // Vertical scrolling
+    const verticalSpeed = distanceFromTop < scrollThreshold
+      ? -getScrollSpeed(distanceFromTop)
+      : distanceFromBottom < scrollThreshold
+      ? getScrollSpeed(distanceFromBottom)
+      : 0;
+    
+    // Horizontal scrolling
+    const horizontalSpeed = distanceFromLeft < scrollThreshold
+      ? -getScrollSpeed(distanceFromLeft)
+      : distanceFromRight < scrollThreshold
+      ? getScrollSpeed(distanceFromRight)
+      : 0;
+    
+    // Apply scrolling with smooth animation
+    if (verticalSpeed !== 0 || horizontalSpeed !== 0) {
+      container.scrollBy({
+        top: verticalSpeed,
+        left: horizontalSpeed,
+        behavior: 'smooth'
+      });
+    }
   };
   
   const handleDrop = (dropIndex: number) => {
@@ -437,6 +479,39 @@ const Exercise: React.FC<ExerciseProps> = ({ category, settings, onExit }) => {
     // Update the element's position
     touchElement.style.left = `${touch.clientX - touchOffset.x}px`;
     touchElement.style.top = `${touch.clientY - touchOffset.y}px`;
+    
+    // Auto-scroll functionality
+    const scrollThreshold = 60; // pixels from edge to trigger scroll
+    const scrollSpeed = 15; // pixels per frame
+    const viewportHeight = window.innerHeight;
+    
+    // Calculate distance from top and bottom edges
+    const distanceFromTop = touch.clientY;
+    const distanceFromBottom = viewportHeight - touch.clientY;
+    
+    // Auto-scroll based on touch position using requestAnimationFrame for smooth scrolling
+    const scroll = () => {
+      if (distanceFromTop < scrollThreshold) {
+        // Scroll up
+        window.scrollBy({
+          top: -scrollSpeed,
+          behavior: 'smooth'
+        });
+        requestAnimationFrame(scroll);
+      } else if (distanceFromBottom < scrollThreshold) {
+        // Scroll down
+        window.scrollBy({
+          top: scrollSpeed,
+          behavior: 'smooth'
+        });
+        requestAnimationFrame(scroll);
+      }
+    };
+    
+    // Start smooth scrolling if within threshold
+    if (distanceFromTop < scrollThreshold || distanceFromBottom < scrollThreshold) {
+      requestAnimationFrame(scroll);
+    }
     
     // Highlight drop zone under touch point
     const dropZoneElements = document.querySelectorAll('.drop-zone');
