@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kingwiss.github.io/Memoey-App/",
+  "homepage": "https://kingwiss.github.io/memory-trainer-rebuild/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

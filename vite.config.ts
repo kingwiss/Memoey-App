@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Memoey-App/', // Base URL for GitHub Pages
+  base: '/memory-trainer-rebuild/', // Base URL for GitHub Pages
   server: {
     port: 5173,
     open: true // Automatically open browser on server start

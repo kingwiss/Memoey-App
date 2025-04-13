@@ -5,10 +5,10 @@ import './Settings.css';
 import './TechniquePopup.css';
 import './Exercise.css';
 import './SubmissionsViewer.css';
-import Exercise from './components/exercise';
+import Exercise from './components/Exercise';
 import SubmissionsRoute from './components/SubmissionsRoute';
 import logo from './assets/logo-new.svg';
-import { FloatingButtons } from './floatingbuttons';
+import { FloatingButtons } from './components/FloatingButtons';
 
 // Define interfaces
 interface Category {
